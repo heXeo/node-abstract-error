@@ -1,4 +1,4 @@
-# AbstractError
+# AbstractError [![Build Status](https://travis-ci.org/heXeo/node-abstract-error.svg)](https://travis-ci.org/heXeo/node-abstract-error)
 
 ## Description
 
