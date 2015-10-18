@@ -35,7 +35,9 @@
     "semistandard": "*",
     "snazzy": "^2.0.1"
   },
-  "dependencies": {},
+  "dependencies": {
+    "babel-runtime": "^5.8.25"
+  },
   "private": false,
   "publishConfig": {
     "access": "public"
