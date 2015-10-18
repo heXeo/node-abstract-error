@@ -1,0 +1,55 @@
+{
+  "name": "@hexeo/abstract-error",
+  "version": "1.0.0",
+  "description": "Abstract Error Class",
+  "keywords": [],
+  "homepage": "https://www.hexeo.be",
+  "bugs": {
+    "url": "https://github.com/heXeo/node-abstract-error/issues",
+    "email": "dev@hexeo.be"
+  },
+  "license": "MIT",
+  "author": "heXeo SPRL <dev@hexeo.be>",
+  "contributors": [
+    "Leandre Gohy <leandre.gohy@hexeo.be>"
+  ],
+  "main": "lib/AbstractError.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heXeo/node-abstract-error.git"
+  },
+  "scripts": {
+    "compile": "babel --optional runtime -d lib/ src/",
+    "lint": "semistandard --verbose | snazzy",
+    "mocha": "mocha --opts ./test/mocha.opts 'test/*.spec.js'",
+    "prepublish": "npm test && npm run compile",
+    "pretest": "npm run lint",
+    "test": "npm run mocha"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "babel-eslint": "^4.1.3",
+    "chai": "^3.3.0",
+    "chai-as-promised": "^5.1.0",
+    "mocha": "^2.3.3",
+    "semistandard": "*",
+    "snazzy": "^2.0.1"
+  },
+  "dependencies": {},
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "semistandard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "/lib"
+    ],
+    "globals": [
+      "describe", "it", "expect"
+    ]
+  },
+  "babel": {
+    "stage": 0
+  }
+}
